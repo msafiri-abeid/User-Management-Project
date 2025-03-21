@@ -1,0 +1,8 @@
+npm i express nodemon ejs body-parser axios mongoose dotenv morgan
+
+MVC - Model, View and Controller
+
+project structure
+assets - css-js-img
+views - 
+server - controller, model, database, routes, services
