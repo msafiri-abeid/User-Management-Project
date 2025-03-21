@@ -2,7 +2,7 @@ const axios = require('axios');
 
 exports.homeRoute = (req, res) => {
     // Make a get request to /api/users
-    axios.get('http://localhost:5000/api/users')
+    axios.get('https://user-management-project-rae0.onrender.com')
     .then((response) => {
         res.render('index', {users: response.data});
     })
@@ -16,7 +16,7 @@ exports.addUser = (req, res) => {
 };
 
 exports.updateUser = (req, res) => {
-    axios.get('http://localhost:5000/api/users', { params: {id:req.query.id}})
+    axios.get('https://user-management-project-rae0.onrender.com', { params: {id:req.query.id}})
     .then((userdata) => {
         res.render('update-user', {user: userdata.data});
     })
